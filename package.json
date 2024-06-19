@@ -1,0 +1,20 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "prepare": "git config core.hooksPath .hooks",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint . --fix",
+    "lint:staged": "lint-staged"
+  },
+  "dependencies": {
+    "vitepress": "^1.2.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.19.1",
+    "eslint": "^9.3.0",
+    "eslint-plugin-format": "^0.1.1"
+  }
+}
