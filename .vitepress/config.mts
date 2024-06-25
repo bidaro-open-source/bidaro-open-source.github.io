@@ -29,7 +29,6 @@ export default defineConfig({
               items: [
                 { text: 'Что такое Bidaro?', link: 'what-is-it' },
                 { text: 'Предметная область', link: 'subject-area' },
-                { text: 'Бизнес анализ', link: 'business-analysis' },
                 { text: 'Предыстория', link: 'prehistory' },
               ],
             },
