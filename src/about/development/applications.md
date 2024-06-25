@@ -8,7 +8,7 @@
 Разделение на приложения нужно, чтобы логически отделить не связанный код в отдельные контейнеры и запускать их по необходимости или по готовому сценарию. Стек и языки программирования таких приложений могут быть не связаны между собой.
 :::
 
-## Bidaro [<Badge type="tip" text="GitHub" />](https://github.com/bidaro-open-source/bidaro) [<Badge type="tip" text="DockerHub" />](https://hub.docker.com/r/dmitrytavern/bidaro)
+## Bidaro <Badge type="tip" text="In develop" />
 
 Full-stack приложение с которым взаимодействуют пользователи. Написан на фреймворке [Nuxt](https://nuxt.com).
 
@@ -16,11 +16,13 @@ Full-stack приложение с которым взаимодействуют
 - Backend принимает запросы от пользователей, подключается ко внешним сервисам и производит необходимые манипуляции с данными без сохранения состояния на сервере.
 - Может быть запущен в нескольких одновременно работающих экземплярах.
 
-<RepositoryCard repository="bidaro-open-source/bidaro" link="https://github.com/bidaro-open-source/bidaro" />
+Смотрите: [GitHub](https://github.com/bidaro-open-source/bidaro), [DockerHub](https://hub.docker.com/r/dmitrytavern/bidaro)
 
-## Bidaro migrator [<Badge type="tip" text="GitHub" />](https://github.com/bidaro-open-source/bidaro-migrator) [<Badge type="tip" text="DockerHub" />](https://hub.docker.com/r/dmitrytavern/bidaro-migrator)
+## Bidaro migrator <Badge type="tip" text="In develop" />
 
 Приложение для изменения структуры базы данных. Использует [umzug](https://github.com/sequelize/umzug) для контроля миграций.
+
+Смотрите: [GitHub](https://github.com/bidaro-open-source/bidaro-migrator), [DockerHub](https://hub.docker.com/r/dmitrytavern/bidaro-migrator)
 
 ## Bidaro backupper <Badge type="info" text="In process" />
 
