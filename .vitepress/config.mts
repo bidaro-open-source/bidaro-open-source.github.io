@@ -14,47 +14,55 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'О проекте', link: '/about/what-is-it', activeMatch: '/about/' },
-          { text: 'Справочник', link: '/reference/infrastructure', activeMatch: '/reference/' },
           {
             text: '0.1.0',
             items: [
-              {
-                text: 'Changelog',
-                link: '/changelog',
-              },
+              { text: 'Changelog', link: '/changelog' },
             ],
           },
         ],
         sidebar: {
           '/about/': [
             {
-              text: 'Начало',
+              text: 'Введение',
+              base: '/about/',
               items: [
-                { text: 'Что это такое?', link: '/about/what-is-it' },
-                { text: 'Предметная область', link: '/about/subject-area' },
-                { text: 'Бизнес анализ', link: '/about/business-analysis' },
-                { text: 'Предыстория', link: '/about/prehistory' },
+                { text: 'Что такое Bidaro?', link: 'what-is-it' },
+                { text: 'Предметная область', link: 'subject-area' },
+                { text: 'Бизнес анализ', link: 'business-analysis' },
+                { text: 'Предыстория', link: 'prehistory' },
               ],
             },
             {
               text: 'Продукт',
+              base: '/about/product/',
               items: [
-                { text: 'Общее видение', link: '/about/product/' },
-                { text: 'Аутентификация', link: '/about/product/authentication' },
-                { text: 'Авторизация', link: '/about/product/authorization' },
-                { text: 'Профили', link: '/about/product/profiles' },
-                { text: 'Торги', link: '/about/product/bidding' },
-                { text: 'Каталог', link: '/about/product/catalog' },
-                { text: 'Обслуживание', link: '/about/product/maintenance' },
+                { text: 'Общее видение', link: '/' },
+                { text: 'Аутентификация', link: 'authentication' },
+                { text: 'Авторизация', link: 'authorization' },
+                { text: 'Профили', link: 'profiles' },
+                { text: 'Торги', link: 'bidding' },
+                { text: 'Каталог', link: 'catalog' },
+                { text: 'Обслуживание', link: 'maintenance' },
               ],
             },
-          ],
-          '/reference/': [
             {
               text: 'Разработка',
+              base: '/about/development/',
               items: [
-                { text: 'Инфраструктура', link: '/reference/infrastructure' },
-                { text: 'Тестирование', link: '/reference/testing' },
+                { text: 'Правила', link: 'rules' },
+                { text: 'Приложения', link: 'applications' },
+                { text: 'Тестирование', link: 'tests' },
+                { text: 'Локальное окружение', link: 'local-environment' },
+              ],
+            },
+            {
+              text: 'Продакшен',
+              base: '/about/production/',
+              items: [
+                { text: 'Инфраструктура', link: 'infrastructure' },
+                { text: 'Процесс обновления', link: 'update' },
+                { text: 'Резервное копирование', link: 'backup' },
               ],
             },
           ],
