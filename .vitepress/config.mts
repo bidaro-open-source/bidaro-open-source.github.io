@@ -37,7 +37,7 @@ export default defineConfig({
               text: 'Продукт',
               base: '/about/product/',
               items: [
-                { text: 'Общее видение', link: '/' },
+                { text: 'Общее видение', link: 'shared-vision' },
                 { text: 'Аутентификация', link: 'authentication' },
                 { text: 'Авторизация', link: 'authorization' },
                 { text: 'Профили', link: 'profiles' },
